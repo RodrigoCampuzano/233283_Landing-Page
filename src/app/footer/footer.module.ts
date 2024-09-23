@@ -10,6 +10,9 @@ import { FooterDashboardComponent } from './footer-dashboard/footer-dashboard.co
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    FooterDashboardComponent
   ]
 })
 export class FooterModule { }

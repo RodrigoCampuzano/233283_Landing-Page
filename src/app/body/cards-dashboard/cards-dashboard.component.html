@@ -1,1 +1,39 @@
-<p>cards-dashboard works!</p>
+<div>
+    <div id="container_serch">
+        <div id="container_serch-bar">
+            <mat-icon id="icon_serch">search</mat-icon>
+            <input type="text" placeholder="Buscar..." id="serch_bar">
+        </div>
+    </div>
+    <div id="container_cards">
+            <mat-card *ngFor="let card of cards" id="card_container" appearance="outlined">
+                <div id="card_header">
+                    <div id="card_img" [ngClass]="card.colorClass">
+                        <img id="img-rest" mat-card-xl-image [src]="card.Image">
+                    </div>
+                    <div id="card_header_info">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                              <mat-card-title>{{ card.title}}</mat-card-title>
+                              <mat-card-subtitle>{{   card.tipe}}</mat-card-subtitle>
+                            </mat-card-title-group>
+                          </mat-card-header>
+                    </div>
+                </div><br>
+                <mat-card-content>
+                    <p>{{ card.description }}</p>
+                    <p>Ubicación: {{ card.location }}</p>
+                </mat-card-content>
+            </mat-card>
+    </div>
+    <div id="container_commentaires">
+        <div id="comment-section">
+            <h2 id="title_comment">Deja tu comentario</h2>
+            <textarea [(ngModel)]="newComment" placeholder="Escribe tu comentario..."></textarea><br>
+            <button (click)="addComment()">Agregar comentario</button>
+            <div *ngFor="let comment of comments" class="comment-box">
+              <p>{{ comment.content }}</p>
+            </div>
+          </div>
+    </div>
+</div>

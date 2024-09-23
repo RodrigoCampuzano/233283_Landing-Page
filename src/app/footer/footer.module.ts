@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterDashboardComponent } from './footer-dashboard/footer-dashboard.component';
+import { MatIcon } from '@angular/material/icon';
 
 
 
@@ -9,7 +10,8 @@ import { FooterDashboardComponent } from './footer-dashboard/footer-dashboard.co
     FooterDashboardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIcon
   ],
   exports: [
     FooterDashboardComponent

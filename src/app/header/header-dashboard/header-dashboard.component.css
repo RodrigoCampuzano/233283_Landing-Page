@@ -1,0 +1,24 @@
+#container_header{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+#title_header{
+    font-size: 40px;
+}
+#container_button-header{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.custom-button {
+    background-color: #47c468 !important;
+    color: rgb(255, 255, 255) !important; 
+    font-size: 16px !important; 
+    padding: 10px 20px; 
+    border-radius: 80px; 
+    width: 180px ;
+    height: 30px;
+}

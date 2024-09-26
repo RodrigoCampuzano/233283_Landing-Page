@@ -1,4 +1,4 @@
-<div>
+<div id="fondo">
     <div id="container_serch">
         <div id="container_serch-bar">
             <mat-icon id="icon_serch">search</mat-icon>
@@ -14,14 +14,14 @@
                     <div id="card_header_info">
                         <mat-card-header>
                             <mat-card-title-group>
-                              <mat-card-title>{{ card.title}}</mat-card-title>
+                              <mat-card-title id="title_card">{{ card.title}}</mat-card-title>
                               <mat-card-subtitle>{{   card.tipe}}</mat-card-subtitle>
                             </mat-card-title-group>
                           </mat-card-header>
                     </div>
                 </div><br>
                 <mat-card-content>
-                    <p>{{ card.description }}</p>
+                    <p id="description_card">{{ card.description }}</p>
                     <p>Ubicación: {{ card.location }}</p>
                 </mat-card-content>
             </mat-card>
@@ -30,7 +30,7 @@
         <div id="comment-section">
             <h2 id="title_comment">Deja tu comentario</h2>
             <textarea [(ngModel)]="newComment" placeholder="Escribe tu comentario..."></textarea><br>
-            <button (click)="addComment()">Agregar comentario</button>
+            <button (click)="addComment()" >Agregar comentario</button>
             <div *ngFor="let comment of comments" class="comment-box">
               <p>{{ comment.content }}</p>
             </div>

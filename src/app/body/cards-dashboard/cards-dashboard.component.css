@@ -1,3 +1,7 @@
+#fondo{
+    background-color: #F0F0F0;
+}
+
 #container_serch{
     display: flex;
     justify-content: center;
@@ -34,6 +38,8 @@
     margin-bottom: 25px; 
 }
 #card_container {
+    
+    border: 3px solid #D3D3D3;
     border-radius: 20px;
     width: 380px;
     height: 280px;
@@ -44,6 +50,14 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+#title_card{
+    color: #1C1C1C;
+}
+
+#description_card{
+    color: #333333;
 }
 
 #card_img{

@@ -1,3 +1,8 @@
+#fondo{
+    background-color: #20B2AA;
+    padding-bottom: 20px;
+}
+
 #container_header{
     padding-top: 20px;
     padding-bottom: 15px;
@@ -7,6 +12,7 @@
 }
 #title_header{
     font-size: 40px;
+    color: white;
 }
 #container_button-header{
     margin-top: 15px;
@@ -14,8 +20,8 @@
     justify-content: space-evenly;
 }
 .custom-button {
-    background-color: #47c468 !important;
-    color: rgb(255, 255, 255) !important; 
+    background-color: #FF7F50 !important;
+    color: rgb(0, 0, 0) !important; 
     font-size: 16px !important; 
     padding: 10px 20px; 
     border-radius: 80px; 

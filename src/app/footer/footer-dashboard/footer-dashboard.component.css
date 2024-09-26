@@ -1,0 +1,17 @@
+#footer {
+    border-top: 2px solid black;
+    background-color: #1C1C1C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#container_redes{
+    color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
